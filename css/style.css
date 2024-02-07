@@ -1,12 +1,18 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', sans-serif;
+    font-weight: 400;
+    color: #8d8d9e;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    background-color: #151521; /* Updated background color */
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: #fff; /* Updated background color */
 }
 
 .box {
@@ -54,14 +60,29 @@ h2 {
 }
 
 #glist::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Track color */
+    background: transparent; /* Updated track color */
 }
 
 #glist::-webkit-scrollbar-thumb {
-    background: #888; /* Thumb color */
+    background: #1e1e2d; /* Updated thumb color */
     border-radius: 5px; /* Rounded corners for the thumb */
 }
 
 #glist::-webkit-scrollbar-thumb:hover {
     background: #555; /* Thumb color on hover */
+}
+
+/* Additional styles */
+.p-pageWrapper {
+    background: #151521; /* Updated background color */
+}
+
+:root {
+    --input-border-heavy: #2b2b40;
+    --input-border-light: #252537;
+}
+
+::selection {
+    background-color: rgba(0, 158, 247, 0.08);
+    color: #009ef7;
 }
