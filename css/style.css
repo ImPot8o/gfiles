@@ -86,3 +86,90 @@ h2 {
     background-color: rgba(0, 158, 247, 0.08);
     color: #009ef7;
 }
+
+/* Your existing styles */
+.p-body .p-body-inner {
+    padding: 4%;
+}
+
+@supports (padding: max(0px)) {
+    .p-body-inner {
+        padding-left: max(10px, env(safe-area-inset-left));
+        padding-right: max(10px, env(safe-area-inset-right));
+    }
+}
+
+.p-body-inner {
+    max-width: 1500px;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.p-pageWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #151521;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --input-border-heavy: #2b2b40;
+    --input-border-light: #252537;
+}
+
+/* Dark mode styles for game list container */
+.container {
+    background-color: #151521;
+    color: #8d8d9e;
+}
+
+/* Game list container styles */
+.container .box {
+    background-color: #151521;
+    color: #8d8d9e;
+    border: 1px solid #2b2b40;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container .box input[type="text"] {
+    background-color: #2b2b40;
+    color: #8d8d9e;
+    border: 1px solid #2b2b40;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.container .box a {
+    color: #8d8d9e;
+    text-decoration: none;
+}
+
+.container .box a:hover {
+    color: #009ef7;
+}
