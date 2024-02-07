@@ -173,3 +173,15 @@ div {
 .container .box a:hover {
     color: #009ef7;
 }
+
+/* Anchor Link Styles */
+a {
+    color: #009ef7; /* Default link color */
+    text-decoration: none; /* Remove underline by default */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a:hover {
+    color: #007acc; /* Change link color on hover */
+}
+
